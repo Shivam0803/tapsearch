@@ -15,6 +15,7 @@ def search():
 
     text = request.form['document']
     word = request.form['a_word']
+    word=word.lower()
     # print(text)
     api = TapSearch(text)
     # print(api.index())
