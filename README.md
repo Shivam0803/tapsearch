@@ -10,7 +10,7 @@
 
 ## Step to run this app
 * Clone this repository
-* Run view.py file
+* Run app.py file
 * The web app will be running on the local server. 
  
 
