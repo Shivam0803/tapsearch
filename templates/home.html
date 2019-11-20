@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script>
+        function checkempty(){
+            
+            if(document.getElementById('textarea_document').value == ""){
+                alert("please enter paragraph first");
+                return false;
+            }
+
+            if(document.getElementById('search_for_word').value == ""){
+                alert("please enter word first");
+                return false;
+            }
+            
+        }
+    </script>
+
+
+</head>
+<body>
+
+            <div class="container">
+        <h1 text-align="center">Search a word App </h1>
+        <form action = "/search" method="post" onsubmit="return checkempty()">
+
+            <div class="form-group">
+                <label for="textarea_document">Type paragraph here</label>
+                <textarea class="form-control" id="textarea_document" rows="10" cols="40" name="document" >
+
+                </textarea>
+            </div>
+
+            <div class="form-group">
+                <input type="text" class="form-control" id = "search_for_word" aria-describedby="emailHelp" placeholder="Enter a word to search" name="a_word">
+            </div>
+
+            <button type="submit" class="btn btn-primary">Search the word</button>
+
+            
+
+
+            <!-- <h2> Enter document here</h2> -->
+        
+        <!-- <textarea rows="20" cols="80", name="document"></textarea>
+        <h3> Search a word </h3>
+        <input type="text" name="a_word" />
+        <input type="submit" name="submit" /> -->
+    
+    </form>
+    </div>
+
+    <div class="container">
+
+        <form action="/">
+            <div class="form-group">
+                <hr>
+        <button type="submit" class="btn btn-warning" > Clear </button>
+
+        </div>
+
+    </form>
+
+</body>
+</html>
