@@ -11,7 +11,7 @@ def home():
 
 @app.route("/search",methods=['POST'] )
 def search():
-    lists = ["aneesh jainns ss ", "bwebfweobwef ", "beowbeobbwebwegbgbwe "]
+    lists = ["ss ", "bwebfweobwef ", "beowbeobbwebwegbgbwe "]
 
     text = request.form['document']
     word = request.form['a_word']
